@@ -1,0 +1,141 @@
+body {
+	display: inline;
+}
+
+a, .container, h1, #article {
+	font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+	background-color: red;
+}
+
+.sticky {
+	 min-height: calc(100vh - 40px);
+}
+
+.container {
+	font-size: 18px;
+	color: #777777;
+	text-align: center;
+	border-style: solid;
+	border-top-width: 1px;
+	border-color: #cccccc;
+}
+
+#header {
+	width: 960px;
+	margin: auto;
+
+}
+
+h1 {
+	background: #4aaaa5;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	float: left;
+	padding: 20px;
+}
+
+#Links {
+	float: right;
+	padding: 20px;
+}
+
+.wrapper {
+		clear: both;
+		overflow: auto;
+		margin: auto;
+		background-image: url(../images/stonehaven.png);
+		border-style: solid;
+		border-top-width: 2px;
+		border-color: #cccccc;
+	}
+
+#aboutme {
+	padding: 20px 0px 20px 0px;
+	margin: 20px 0px 20px 0px;
+	background: #ffffff;
+	width: 650px;
+	height: 570px;
+	float: left;
+	color: #4aaaa5;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#article {
+	padding: 20px 0px 20px 0px;
+	margin: 20px;
+	border-style: solid;
+	text-align: left;
+	border-color: #dddddd;
+	border-top-width: 2px;
+	position: relative;
+	background-color: #ffffff;
+	height: 300px;
+	color: #777777;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 22px;
+}
+
+
+#icons {
+	padding: 20px 0px 20px 0px;
+	margin: 20px;
+	border-style: solid;
+	text-align: left;
+	border-color: #dddddd;
+	border-top-width: 1px;
+	position: relative;
+	background-color: #ffffff;
+}
+img {
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding-right: 20px;
+}
+
+.icon1 {
+	width: 50px;
+	height: 50px;
+}
+
+.icon2 {
+	width: 50px;
+	height: 50px;
+}
+
+.icon3 {
+	width: 50px;
+	height: 50px;
+}
+
+#connect {
+	padding: 20px 0px 20px 0px;
+	margin: 20px 20px 20px 0px;
+	height: 150px;
+	background: #ffffff;
+	width: 270px;
+	float: right;
+	color: #4aaaa5;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+footer {
+	clear: both;
+	overflow: auto;
+	border-style: solid;
+	border-top-width: 5px;
+	border-color: #4aaaa5;
+	background-color: #666666;
+	height: 40px;
+	font-weight: bold;
+	padding-top: 30px;
+	font-size: 12px;
+}

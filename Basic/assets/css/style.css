@@ -1,0 +1,202 @@
+body {
+	display: inline;
+}
+
+a, .container, h1, #article, p {
+	font-family: 'Roboto', sans-serif;
+	color: #777777;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+a:active {
+	color: blue;
+}
+
+
+input[type=text] {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#subject {
+	 width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+hr {
+	color: #cccccc;
+	border-style: solid;	
+}
+
+.container {
+	font-size: 18px;
+	color: #777777;
+	text-align: center;
+	border-style: solid;
+	border-top-width: 1px;
+	border-color: #cccccc;
+}
+
+#header {
+	width: 960px;
+	margin: auto;
+
+}
+
+h1 {
+	background: #4aaaa5;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	float: left;
+	padding: 20px;
+}
+
+#Links {
+	float: right;
+	padding: 20px;
+}
+
+.wrapper {
+		clear: both;
+		overflow: auto;
+		margin: auto;
+		background-image: url(../images/stonehaven.png);
+		border-style: solid;
+		border-top-width: 2px;
+		border-color: #cccccc;
+	}
+
+.aboutme {
+	color: #4aaaa5;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 20px;
+}
+
+#article {
+	float: left;
+	width: 610px;
+	padding: 20px;
+	margin: 20px 0px 20px 0px;
+	text-align: left;
+/*	position: relative;*/
+	background-color: #ffffff;
+	height: 570px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 22px;
+}
+
+
+#icons {
+	padding: 20px 0px 20px 0px;
+	margin: 20px;
+	border-style: solid;
+	text-align: left;
+	border-color: #dddddd;
+	border-top-width: 1px;
+	position: relative;
+	background-color: #ffffff;
+}
+img {
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding-right: 20px;
+}
+
+#relative {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 20px;
+}
+
+#relativeright {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 20px;
+}
+
+#absolute {
+    position: absolute;
+    background: #4aaaa5;
+    bottom: 40px;
+    padding: 20px 0px 20px 0px;
+    height: 20px;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+}
+
+#connect {
+	padding: 20px 0px 20px 0px;
+	margin: 20px 20px 20px 0px;
+	height: 150px;
+	background: #ffffff;
+	width: 270px;
+	float: right;
+	color: #4aaaa5;
+	font-weight: bold;
+	font-size: 18px;
+}
+.icon1 {
+	width: 50px;
+	height: 50px;
+}
+
+.icon2 {
+	width: 50px;
+	height: 50px;
+}
+
+.icon3 {
+	width: 50px;
+	height: 50px;
+}
+
+
+
+footer {
+	clear: both;
+	overflow: auto;
+	border-style: solid;
+	border-top-width: 5px;
+	border-color: #4aaaa5;
+	background-color: #666666;
+	height: 40px;
+	font-weight: bold;
+	padding-top: 30px;
+	font-size: 12px;
+}
