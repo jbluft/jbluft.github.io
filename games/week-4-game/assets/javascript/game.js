@@ -14,9 +14,7 @@ function randomNumberFromRange(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-
-//going to create 4 random numbers between 1-12; is there a way to for loop this?
-
+//random # generator for each tribble. Breaking it up to 4 ranges to avoid overlap of same # chosen.
 var randomTribble = randomNumberTribble(1, 3);
 var randomTribble2 = randomNumberTribble2(4, 6);
 var randomTribble3 = randomNumberTribble3(7, 9);
@@ -25,7 +23,6 @@ var randomTribble4 = randomNumberTribble4(10, 12);
 function randomNumberTribble(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
-
 function randomNumberTribble2(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
@@ -47,21 +44,10 @@ var imageTribble2 = $("<img>");
 var imageTribble3 = $("<img>");
 var imageTribble4 = $("<img>");
 
-imageTribble.addClass("tribble-image");
-imageTribble2.addClass("tribble-image2");
-imageTribble3.addClass("tribble-image3");
-imageTribble4.addClass("tribble-image4");
-
-imageTribble.attr("src", "assets/images/tribble1.png");
-imageTribble2.attr("src", "assets/images/tribble2.png");
-imageTribble3.attr("src", "assets/images/tribble3.png");
-imageTribble4.attr("src", "assets/images/tribble4.png");
-
-$("#tribble1").append(imageTribble);
-$("#tribble2").append(imageTribble2);
-$("#tribble3").append(imageTribble3);
-$("#tribble4").append(imageTribble4);
-
+imageTribble.attr("src", "assets/images/tribble1.png").appendTo("#tribble1").addClass("tribble-image");
+imageTribble2.attr("src", "assets/images/tribble2.png").appendTo("#tribble2").addClass("tribble-image");
+imageTribble3.attr("src", "assets/images/tribble3.png").appendTo("#tribble3").addClass("tribble-image");
+imageTribble4.attr("src", "assets/images/tribble4.png").appendTo("#tribble4").addClass("tribble-image");
 
 
 //audio variable
@@ -134,6 +120,11 @@ function WinLose() {
 		randomTribble2 = randomNumberTribble(4, 6);
 		randomTribble3 = randomNumberTribble(7, 9);
 		RandomTribble4 = randomNumberTribble(10, 12);
+		$('#tribble1').removeClass('animated pulse');
+		$('#tribble2').removeClass('animated pulse');
+		$('#tribble3').removeClass('animated pulse');
+		$('#tribble4').removeClass('animated pulse');
+
 
 	}
 
