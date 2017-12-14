@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- jQuery Link -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+	<!-- Added a link to Bootstrap-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<!-- Added a link to CSS/JS files -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+
+	<title>Trivia Game</title>
+</head>
+<body>
+	<!-- Pseudo-Code 
+		HTML layout the landing page
+		Create a start button
+		replace the div with different content once the onclick is clicked
+		the start button will cause a new div to show up. Set up a timer that counts down when start button is pushed so use onclick for that
+		Create the variables needed
+			object with questions/answers
+			userselections
+			correct answers
+			incorrect answers
+		Set up the first question
+		Set up radial buttons with links to the object for content
+		Use a for loop to load all the questions
+		Set up boolean for if useranswers are correct. If user is right, == true
+		Set up correct/incorrect
+		Find images including background image
+		set up gif to show up after game is over
+		reset game
+
+	-->
+
+
+	<!-- the main content will go here -->
+	<div>
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8 main-content">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-10"><h1 class="title">Baseball History Trivia Game</h1></div>
+				</div>
+				<div class="row" id="start">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-8">
+						<button class="btn btn-primary">START</button>
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+				<div id="show-number"></div>
+				<div id="showQuestions"></div>
+				<div id="submit"></div>
+
+				
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+    <!-- Game Logic -->
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</html>

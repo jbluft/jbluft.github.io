@@ -1,0 +1,29 @@
+body {
+	background: url(../images/dodgers_background.jpg);
+}
+
+.title {
+	font-size: 48px;
+	line-height: 66px;
+	color: #000;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.main-content {
+	background-color: #FFFF00;
+	padding: 100px;
+	margin-top: 100px;
+}
+
+.btn {
+	padding: 20px 50px 20px 50px;
+	font-size: 24px;
+}
+
+.countdown {
+	font-size: 48px;
+	line-height: 62px;
+	font-weight: bold;
+}
+
