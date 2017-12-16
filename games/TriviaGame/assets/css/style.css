@@ -1,5 +1,6 @@
 body {
 	background: url(../images/dodgers_background.jpg);
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .title {
@@ -27,3 +28,11 @@ body {
 	font-weight: bold;
 }
 
+.styling {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+#submit {
+	margin: 20px;
+}
