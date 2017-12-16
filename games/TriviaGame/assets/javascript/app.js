@@ -120,6 +120,11 @@ $("#submit").click(function() {
   console.log(wrong);
   //time to write to the page
   $("#submit").removeClass("btn btn-primary submit").addClass("styling").html("<br />" + "You got " + right + " correct" + "<br />" + "You got " + wrong + " wrong");
+  var imageURL = "https://media.giphy.com/media/6xObAsFZeH3MI/giphy.gif";
+  var mickImage = $("<img>");
+  mickImage.attr("src", imageURL);
+  $("#gifsHere").prepend(mickImage);
+
 
 });
 
