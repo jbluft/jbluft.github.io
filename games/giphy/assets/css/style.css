@@ -4,14 +4,29 @@ body {
 }
 
 button {
-	padding: 5px;
+	padding: 10px;
 	margin: 10px 10px 20px 10px;
 	background: #4aaaa5;
 	border: 0;
+
+}
+
+.animalType {
+	color: #fff;
+
+}
+
+.animalType:active {
+	color: #000;
+	background: red;
+}
+
+.animalType:hover {
+	color: #000;
 }
 
 #animal-input, #add-animal, p {
-	margin: 5px;
+	margin: 5px 200px 5px 0;
 }
 
 #header {
@@ -22,4 +37,8 @@ button {
 .animalGifs {
 	margin: 10px;
 	float: left;
+}
+
+#animal-form {
+	float: right;
 }

@@ -1,6 +1,8 @@
 $( document ).ready(function() {
 
-var animals = ['horse', 'cat', 'dog', 'fish', 'porgs', 'duck'];
+var animals = ['horse', 'cat', 'dog', 'fish', 'porgs', 'duck', 'dragon', 'snake', 'lizard', 'rabbit', 'lion'];
+
+
 createButtons();
 
 
@@ -11,7 +13,7 @@ $(document).on("click", ".animalType", displayAnimalInfo);
 function displayAnimalInfo() {
     $("#animalGifs").empty();
 
-	var animal = $(this).attr("data-name");
+    var animal = $(this).attr("data-name");
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=sqOj9Wv20vkeeyWjpozosrTg2CJxdXWI&limit=10";
 
@@ -98,6 +100,7 @@ function createButtons() {
 	b.text(animals[i]);
 	//Writing the buttons to the DOM
 	$("#showButtons").append(b);
+
     }
 };
 
@@ -107,11 +110,22 @@ $("#add-animal").on("click", function(event) {
 	// prevent form from trying to submit/refresh the page
 	event.preventDefault();
 
-	// Capture User Inputs and store them into my animals array
-	var name = $("#animal-input").val().trim();
-	//push the user values into the array
-	animals.push(name);
+	// Capture User Inputs and store them into my animals array.
+  //set string to lowercase and trim
+	var name = $("#animal-input").val().toLowerCase().trim();
 
+
+	//push the user values into the array and remove duplicates; throw alert for a duplicate
+
+if (animals.indexOf(name) == -1){
+            animals.push(name)
+        }
+        else {
+          alert("This animal already is on the list");
+        }
+
+/*	animals.push(name);
+*/
 	//run the function to make the buttons
 	createButtons();
 
