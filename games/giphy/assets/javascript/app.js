@@ -26,7 +26,6 @@ function displayAnimalInfo() {
     .done(function(response) {
  
     var results = response.data;
-      console.log(response.data);
 
     for (i = 0; i < results.length; i++) {
 
@@ -52,7 +51,7 @@ function displayAnimalInfo() {
 		animalImages.addClass('gif');
 
 		// Appending the image
-    	animalDiv.append(animalImages);
+    	animalDiv.prepend(animalImages);
     
 	// writing the gifs to the DOM
     $("#animalGifs").append(animalDiv);

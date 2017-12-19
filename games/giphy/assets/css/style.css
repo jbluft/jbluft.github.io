@@ -29,6 +29,10 @@ button {
 	margin: 5px 200px 5px 0;
 }
 
+p {
+	font-weight: bold;
+}
+
 #header {
 	margin-left: 5px;
 	margin-top: 15px;
