@@ -1,0 +1,38 @@
+#snitch, #add-train-btn {
+	background-color: #7f0909;
+	color: #FFC500;
+}
+
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#knight {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	float: right;
+	font-style: italic;
+	padding-bottom: 10px;
+}
+
+.jumbotron {
+	background: url('../images/hogwartsexpress.jpg');
+	color: #FFC500;
+}
+
+#train-table, th {
+	text-align: center;
+}
+
+.main {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 42px;
+	line-height: 66px;
+}
+
+.sub {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 24px;
+}
