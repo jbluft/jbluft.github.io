@@ -63,8 +63,8 @@ $("#add-train-btn").on("click", function(event) {
 
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
-  console.log("Here's the childsnapshot");
-  console.log(childSnapshot.val());
+/*  console.log("Here's the childsnapshot");
+  console.log(childSnapshot.val());*/
 
   // Store everything into a variable.
   var newTrainA = childSnapshot.val().train;
@@ -73,13 +73,13 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   var newFrequencyA = childSnapshot.val().frequency;
 
   // Console group the new variables binding to the firebase data
-  console.group("new snapshop vars")
+/*  console.group("new snapshop vars")
   console.log(newTrainA);
   console.log(newDestinationA);
   console.log(newDepartureA);
   console.log(newFrequencyA);
   console.groupEnd();
-
+*/
 
 // variable for storing frequency user input
     var tFrequency = newFrequencyA;
@@ -89,11 +89,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
     // first time conversion
     var firstTimeConverted = moment(firstTime, "hh:mm").subtract(1, "years");
-    console.log(firstTimeConverted);
 
     // Get the current time
     var currentTime = moment();
-    console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
 
     // Calculate the difference between the times
     var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
@@ -115,4 +113,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 });
 
+//creating fromnow moment since last dementor attack
+var dementorAttack = moment([2018, 0, 01]).fromNow(true); 
+console.log(dementorAttack);
+
+//write the dementor attack date to the DOM
+$("#dementor").append(dementorAttack);
 });
