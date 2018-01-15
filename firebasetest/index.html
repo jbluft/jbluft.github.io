@@ -1,14 +1,27 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
 
 	<title>Document</title>
 
 </head>
 <body>
+
+	<div class="row">
+		<div class="col-lg-12" id="clientName">
+    <button class="btn btn-primary" id="googleLog" type="submit">Login with Google</button>
+
+</div>
+
+
+<!-- 
 	<span id='googleLog'><img width="150px" src="googlesignin.png" onclick=callGoogleSignIn()></span> <h1 id='clientName'></h1>
-<!-- 	<img id='clientPhoto' src=""> -->
+<img id='clientPhoto' src=""> -->
 
 
 
@@ -45,6 +58,12 @@
   };
 */
 
+$("#googleLog").on("click", function(event) {
+  event.preventDefault();
+callGoogleSignIn();
+});
+
+
 function callGoogleSignIn() {
 	function newLoginHappened(user) {
 		if (user) {
@@ -64,8 +83,10 @@ function app(user) {
 	//user.email
 	//user.photoURL
 	//user.uid
+	$("#clientName").innerHTML = user.displayName;
+/*
 	document.getElementById('clientName').innerHTML = user.displayName;
-	document.getElementById('googleLog').innerHTML = "";
+	document.getElementById('googleLog').innerHTML = "";*/
 /*	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
 */	console.log(user.displayName);
 	console.log(user.email);
