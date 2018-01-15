@@ -4,8 +4,8 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Hello <span id="clientName"></span></h1>
-	<img id="clientPhoto" src="">
+	<h1>Hello <span id='clientName'></span></h1>
+	<img id='clientPhoto' src="">
 </body>
 
 <input type="button" onclick=callGoogleSignIn() value="Google Sign In"/>
@@ -63,10 +63,12 @@ function app(user) {
 	//user.email
 	//user.photoURL
 	//user.uid
-/*	document.getElementById('clientName').innerHTML = user.displayName;
-	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);*/
+	document.getElementById('clientName').innerHTML = user.displayName;
+	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
 	console.log(user.displayName);
 	console.log(user.email);
+	console.log(photoURL);
+	console.log(uid);
 }
 
 
