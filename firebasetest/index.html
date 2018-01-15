@@ -68,18 +68,19 @@ function app(user) {
 	//user.photoURL
 	//user.uid
 	document.getElementById('clientName').innerHTML = user.displayName;
-	document.getElementById('googleLog').innerHTML = "<img src='logout.png' width='150px' onclick=signOut()>";
+	document.getElementById('googleLog').innerHTML = "<img src='logout.png' width='150px' onClick=signOut()>";
 /*	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
 */	console.log(user.displayName);
 	console.log(user.email);
 /*	console.log(photoURL);*/
 }
 
-firebase.auth().signOut().then(function() {
+
+/*firebase.auth().signOut().then(function() {
   // Sign-out successful.
 }).catch(function(error) {
   // An error happened.
-});
+});*/
 
 
 </script>
