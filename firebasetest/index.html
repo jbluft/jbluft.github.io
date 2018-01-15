@@ -83,7 +83,7 @@ function app(user) {
 	//user.email
 	//user.photoURL
 	//user.uid
-	$("#clientName").html("<button class=btn-primary>" + user.displayName + "</button>");
+	$("#clientName").html("<button class='btn-primary' id='logout'>" + user.displayName + "</button>");
 /*
 
 
@@ -94,8 +94,22 @@ function app(user) {
 	console.log(user.email);
 /*	console.log(photoURL);*/
 }
-
 }
+
+
+
+$(document).on("click", "#logout", logoff);
+
+function logoff() {
+firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+}
+
+
+
 
 	/*firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
     .then(function() {
@@ -112,11 +126,7 @@ function app(user) {
     });
 */
 
-/*firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
-});*/
+
 
 
 </script>
