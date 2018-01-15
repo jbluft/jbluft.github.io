@@ -83,7 +83,7 @@ function app(user) {
 	//user.email
 	//user.photoURL
 	//user.uid
-	$("#clientName").html("<h1>" + user.displayName + "</h1>" + "<img src=logout.png>");
+	$("#clientName").html("<button class=btn-primary>" + user.displayName + "</button>");
 /*
 
 
@@ -97,8 +97,20 @@ function app(user) {
 
 }
 
-
-
+	/*firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
+    .then(function() {
+      var provider = new firebase.auth.GoogleAuthProvider();
+      // In memory persistence will be applied to the signed in Google user
+      // even though the persistence was set to 'none' and a page redirect
+      // occurred.
+      return firebase.auth().signInWithRedirect(provider);
+    })
+    .catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+    });
+*/
 
 /*firebase.auth().signOut().then(function() {
   // Sign-out successful.
