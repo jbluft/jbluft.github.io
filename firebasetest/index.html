@@ -77,7 +77,6 @@ function callGoogleSignIn() {
 
 	}
 	firebase.auth().onAuthStateChanged(newLoginHappened);
-}
 
 function app(user) {
 	//user.displayName
@@ -95,6 +94,10 @@ function app(user) {
 	console.log(user.email);
 /*	console.log(photoURL);*/
 }
+
+}
+
+
 
 
 /*firebase.auth().signOut().then(function() {
