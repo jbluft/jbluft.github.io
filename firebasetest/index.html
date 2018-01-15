@@ -1,16 +1,15 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<meta name="google-signin-client_id" content="1000127600825-0j3559jr8s48ccddnu1dilotb79vc4pv.apps.googleusercontent.com">
+<!-- 	<script src="https://apis.google.com/js/platform.js" async defer></script> -->
+<!-- 	<meta name="google-signin-client_id" content="1000127600825-0j3559jr8s48ccddnu1dilotb79vc4pv.apps.googleusercontent.com"> -->
 	<title>Document</title>
 
 </head>
 <body>
-	<h1>Hello <span id='clientName'></span></h1> <div class="g-signin2" data-onsuccess="onSignIn" onclick=callGoogleSignIn()></div>
+	<h1>Hello <span id='clientName'></span></h1> </div>
 <!-- 	<img id='clientPhoto' src=""> -->
-<!-- 	<span id='googleLog'><input type="button" onclick=callGoogleSignIn() value="Google Sign In"/></span> -->
-
+<span id='googleLog'><img width="150px" src="googlesignin.png" onclick=callGoogleSignIn()></span>
 
 
 
@@ -70,7 +69,7 @@ function app(user) {
 	//user.photoURL
 	//user.uid
 	document.getElementById('clientName').innerHTML = user.displayName;
-	document.getElementById('googleLog').innerHTML = "";
+	/*document.getElementById('googleLog').innerHTML = "";*/
 /*	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
 */	console.log(user.displayName);
 	console.log(user.email);
