@@ -1,4 +1,4 @@
-<<html>
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -7,6 +7,10 @@
 	<h1>Hello <span id="clientName"></span></h1>
 	<img id="clientPhoto" src="">
 </body>
+
+<input type="button" onclick=callGoogleSignIn() value="Google Sign In"/>
+
+
 
 
 <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
@@ -22,7 +26,15 @@
   };
   firebase.initializeApp(config);
 
-function login() {
+
+ function callGoogleSignIn(){
+          var provider = new firebase.auth.GoogleAuthProvider();
+          firebase.auth().signInWithRedirect(provider);
+
+      }
+
+
+/*function login() {
 	function newLoginHappened(user) {
 		if (user) {
 			//user is signed in
@@ -45,7 +57,7 @@ function app(user) {
 	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
 }
 
-window.onload = login;
+window.onload = login;*/
 
 
 </script>
