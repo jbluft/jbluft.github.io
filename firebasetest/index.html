@@ -15,6 +15,7 @@
 	<div class="row">
 		<div class="col-lg-12" id="clientName">
     <button class="btn btn-primary" id="googleLog" type="submit">Login with Google</button>
+		</div>
 
 </div>
 
@@ -83,8 +84,10 @@ function app(user) {
 	//user.email
 	//user.photoURL
 	//user.uid
-	$("#clientName").innerHTML = user.displayName;
+	$("#clientName").html("<h1>" + user.displayName + "</h1>");
 /*
+
+
 	document.getElementById('clientName').innerHTML = user.displayName;
 	document.getElementById('googleLog').innerHTML = "";*/
 /*	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
