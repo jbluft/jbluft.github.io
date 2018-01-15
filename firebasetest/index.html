@@ -2,15 +2,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </head>
 <body>
 	<h1>Hello <span id='clientName'></span></h1>
-	<img id='clientPhoto' src="">
+<!-- 	<img id='clientPhoto' src=""> -->
 <!-- 	<span id='googleLog'><input type="button" onclick=callGoogleSignIn() value="Google Sign In"/></span> -->
 
-<div class="g-signin2" data-onsuccess="onSignIn" id='googleLog'></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="1000127600825-0j3559jr8s48ccddnu1dilotb79vc4pv.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 
 
 </body>
