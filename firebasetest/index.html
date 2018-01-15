@@ -31,10 +31,13 @@
           var provider = new firebase.auth.GoogleAuthProvider();
           firebase.auth().signInWithRedirect(provider);
 
+          firebase.auth().getRedirectResult().then(function(result) {
+    		var token = result.credential.accessToken;
+    		currentUser = result.user;
+    		console.log(token);
+
       }
 
-      console.log(user.displayName);
-      console.log(user.email);
 
 
 /*function login() {
