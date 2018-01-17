@@ -60,7 +60,7 @@
 */
 
 $("#googleLog").on("click", function(event) {
-  event.preventDefault();
+/*  event.preventDefault();*/
 callGoogleSignIn();
 });
 
@@ -84,15 +84,8 @@ function app(user) {
 	//user.photoURL
 	//user.uid
 	$("#clientName").html("<button class='btn-primary' id='logout'>" + user.displayName + " (logout)" + "</button>");
-/*
-
-
-	document.getElementById('clientName').innerHTML = user.displayName;
-	document.getElementById('googleLog').innerHTML = "";*/
-/*	document.getElementById('clientPhoto').setAttribute('src', user.photoURL);
-*/	console.log(user.displayName);
+	console.log(user.displayName);
 	console.log(user.email);
-/*	console.log(photoURL);*/
 }
 }
 
