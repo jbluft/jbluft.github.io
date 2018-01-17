@@ -60,7 +60,7 @@
 */
 
 $("#googleLog").on("click", function(event) {
-/*  event.preventDefault();*/
+  event.preventDefault();
 callGoogleSignIn();
 });
 
@@ -83,6 +83,7 @@ function app(user) {
 	//user.email
 	//user.photoURL
 	//user.uid
+  event.preventDefault();
 	$("#clientName").html("<button class='btn-primary' id='logout'>" + user.displayName + " (logout)" + "</button>");
 	console.log(user.displayName);
 	console.log(user.email);
