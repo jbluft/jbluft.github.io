@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "MegaMan",
+      "image": "https://static.giantbomb.com/uploads/scale_small/9/99864/2389467-mm10_megaman.png",
+      "occupation": "Hero",
+      "location": "Arm Blaster"      
+    },
+    {
+      "id": 2,
+      "name": "Crash Man",
+      "image": "https://static.giantbomb.com/uploads/scale_small/4/48222/1710419-470px_crashman.png",
+      "occupation": "Robot Master",
+      "location": "Crash Bomb"      
+    },
+    {
+      "id": 3,
+      "name": "Bubble Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/3/31839/1470551-bubbleman.png",
+      "occupation": "Robot Master",
+      "location": "Bubble Lead"      
+    },
+    {
+      "id": 4,
+      "name": "Air Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/3/30446/951492-airmanexe.png",
+      "occupation": "Robot Master",
+      "location": "Air Shooter"      
+    },
+    {
+      "id": 5,
+      "name": "Dr. Light",
+      "image": "https://static.giantbomb.com/uploads/square_small/0/26/10586-drlight.jpg",
+      "occupation": "Robotics Doctor",
+      "location": "Science"      
+    },
+    {
+      "id": 6,
+      "name": "Dr. Wily",
+      "image": "https://static.giantbomb.com/uploads/square_small/0/31/11149-wily.gif",
+      "occupation": "Evil Mastermind",
+      "location": "Evil"      
+    },
+    {
+      "id": 7,
+      "name": "Flash Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/3/31839/1470531-flashman2.png",
+      "occupation": "Robot Master",
+      "location": "Time Stopper"      
+    },
+    {
+      "id": 8,
+      "name": "Heat Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/4/48222/1710420-508px_heatman.png",
+      "occupation": "Robot Master",
+      "location": "Atomic Fire"      
+    },
+    {
+      "id": 9,
+      "name": "Mecha Dragon",
+      "image": "https://static.giantbomb.com/uploads/square_small/16/164924/2937073-1142639465-latest",
+      "occupation": "Robot Master",
+      "location": "Fireballs"      
+    },
+    {
+      "id": 10,
+      "name": "Metal Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/0/125/188565-metalman.jpg",
+      "occupation": "Robot Master",
+      "location": "Metal Blade"      
+    },
+    {
+      "id": 11,
+      "name": "Quick Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/3/31839/1470538-quickman.png",
+      "occupation": "Robot Master",
+      "location": "Quick Boomerang"      
+    },
+    {
+      "id": 12,
+      "name": "Wood Man",
+      "image": "https://static.giantbomb.com/uploads/square_small/3/31839/1470459-woodman2.png",
+      "occupation": "Robot Master",
+      "location": "Leaf Shield"
+    }
+  ]
+  
